@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,10 +10,15 @@
       type="image/x-icon"
     />
 
-    <!-- Remix Icon -->
+    <!-- Icon -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+    />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
     />
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
@@ -22,9 +27,60 @@
   <body>
     <!--==================== HEADER ====================-->
     <header class="header" id="header"></header>
-<nav class="nav container">
-  
-</nav>
+    <nav class="nav container">
+      <a href="#" class="nav__logo">چیپس</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li><a href="#" class="nav__link">صفحه اصلی</a></li>
+
+          <li><a href="#" class="nav__link">موارد دلخواه</a></li>
+
+          <li><a href="#" class="nav__link">مراقبت</a></li>
+
+          <li><a href="#" class="nav__link">محصولات</a></li>
+
+          <li><a href="#" class="nav__link">تماس با ما</a></li>
+        </ul>
+
+        <!-- Close Button -->
+        <div class="nav__close" id="nav-close">
+          <i class="bx bx-x"></i>
+        </div>
+
+        <div class="nav__social">
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            class="nav__social-link"
+            rel="noopener noreferrer"
+          >
+            <i class="bx bxl-facebook-circle"></i>
+          </a>
+
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            class="nav__social-link"
+            rel="noopener noreferrer"
+          >
+            <i class="bx bxl-instagram"></i>
+          </a>
+
+          <a
+            href="https://twitter.com/"
+            target="_blank"
+            class="nav__social-link"
+            rel="noopener noreferrer"
+          >
+            <i class="bx bxl-twitter"></i>
+          </a>
+        </div>
+      </div>
+      <div class="nav__toggle" id="nav-toggle">
+        <i class='bx bx-grid-alt'></i>
+      </div>
+    </nav>
     <!--==================== MAIN ====================-->
     <main class="main">
       <!--==================== HOME ====================-->
