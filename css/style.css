@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Titan+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&family=Vazirmatn:wght@100..900&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -21,8 +21,8 @@
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: "Poppins", sans-serif;
-  --second-font: "Titan One", sans-serif;
+  --body-font: "Vazirmatn", sans-serif;
+  --second-font: "Lalezar", sans-serif;
   --biggest-font-size: 3.5rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -118,23 +118,45 @@ img {
   background-color: var(--first-color);
   z-index: var(--z-fixed);
   transition: box-shadow 0.4s;
+}
 
-  .nav {
-    position: relative;
-    height: var(--header-height);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.nav {
+  position: relative;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    .nav__logo{
-        color: var(--white-color);
-        font-family: var(--second-font);
-        text-shadow: var(--shadow-text);
-    }
-  }
+.nav__logo {
+  color: var(--white-color);
+  font-family: var(--second-font);
+  text-shadow: var(--shadow-text);
+  font-size: 2em;
+}
+
+.nav__close,
+.nav__toggle {
+  display: flex;
+  font-size: 2.5em;
+  cursor: pointer;
 }
 
 /* Navigation for mobile devices */
+@media screen and (max-width: 1150px) {
+  .nav__menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: var(--first-color-dark);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: left 0.4s;
+  }
+}
 
 /* Show menu */
 
